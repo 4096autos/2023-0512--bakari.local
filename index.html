@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BOUBACAR D | Informaticien</title>
+
+    <link rel="stylesheet" href="css/4_w3.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- {# id="bootstrap-css"#} -->
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/fastyle.css">
+
+    <!-- {# cdn for  https://bootsnipp.com/snippets/X2GEX#} -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="/css/fastyle.css">
+    <!-- {# cdn for  https://bootsnipp.com/snippets/X2GEX#} -->
+
+    <!-- {# Responsive navbar#} -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- /* {# Responsive navbar#} * -->
+
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- {# cdn for  https://bootsnipp.com/snippets/X2GEX #} */-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+    <style>
+        .a-boubacar a.active {
+            background-color: #4CAF50;
+            color:darkslategrey;
+        }
+        a {text-decoration: none;}
+        p{
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        #lirelasuite {display:none;}
+
+        h1 h2 h3 h4 h5 {
+            text-align: left;
+        }
+
+        .nav-item::after{
+            content:'';
+            display:block;
+            width:0px;
+            height:4px;
+            background:#ff0000;
+            transition: 0.2s;
+            margin-top:-10px;
+        }
+
+        .nav-item:hover::after{width:100%;}
+
+        .nav-link{padding:15px 5px;transition:0.2s;}
+
+        .navbar-nav .nav-link { color:#000; font-weight:bold; font-size:18px; }
+
+        .navbar-nav .active > .nav-link{ width:100%; height:51px; border-bottom: .25rem solid transparent;
+            border-bottom-color: #ed4137; }
+
+        .header-top{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding-right: 15%;
+            z-index: 6;
+        }
+        .footers {
+            text-align: center;
+            color: #040300;
+
+            left: 0;
+            bottom: 1%;
+            width: 100%;
+        }
+        .footer-bottom{
+            background-color: #ffffff;
+            left: 0;
+            bottom: -1%;
+            width: 100%;
+            z-index:6;
+        }
+        .text-align-left{
+            text-align: start;
+        }
+        .text-align-justify{
+            text-align: justify;
+        }
+        /* Responsive navbar fixed On Scroll */
+
+
+        .header {
+            background-color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            color: #000;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: #333;
+            z-index: 7;
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #navbar a:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+
+        #navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky + .content {
+            padding-top: 60px
+
+
+
+        }
+
+
+
+
+        body {
+            font-family: "Roboto, HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+            font-size: 14px;
+            color: #666;
+            -webkit-text-size-adjust: 100%;
+            line-height: 18.5px;
+            margin: 0%;
+            background-color: #ffffff;
+            color: black;
+        }
+        html{ min-height: 100%; }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #ffffff;
+            margin: 2%;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;;
+            text-align: center;
+            padding: 1% 2%;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ffc107;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color:black;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+                float: right;
+                display: block;
+                margin: 2%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {position: relative;}
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        .div-contact{
+
+        }
+        hr{
+            background: white;
+        }
+
+        .contact-form{
+            background: rgba(255, 255, 255, 0.6);
+            color: #000000;
+            margin-top: 100px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 3px grey;
+        }
+    </style>
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3TVML011S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-K3TVML011S');
+    </script>
+</head>
+
+<body style="background-color:white;">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PT39TDK"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<div class="header">
+    <h2><b><a href=""  style="color: #000;">Boubacar D</a></b></h2>
+    <h4><b></b></h4>
+</div>
+<nav id="navbar" class="navbar navbar-expand-md bg-dark navbar-dark">
+    <ul class="navbar-nav">
+        <li class="active">
+            <a href="" class=" nav-link"> HOME</a>
+        </li>
+    </ul>
+    <!--             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <!--
+            <li class="nav-item">
+                <a href="#competence" class="nav-link"><i class="fa fa-briefcase"></i> Compétences</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="#contact" class="nav-link"><i class="fa fa-handshake-o"></i> Contact</a>
+            </li>
+            -->
+        </ul>
+    </div>
+</nav>
+<div id="bakari"></div>
+
+<!-- P A G E S -->
+
+<!-- P A G E S - QUI SUIS-JE ?      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div class="div-quijesuis" >
+    <div class="container contact-form ">
+        <h3> </h3>
+        <hr>
+        <div class="row ml-2 mr-2">
+            
+            Mon métier consiste à mettre au point et à améliorer des programmes informatiques ou 
+            encore à adapter des standards à des spécificités client,
+            à concevoir et à développer des applications informatiques, autrement dit,
+            transcrire des besoins en solutions informatiques écrites dans des langages informatiques. <br>
+            <br>
+            Avant chaque exécution, je définis les besoins des utilisateurs, leurs obligations pour la réussite du projet en cours.
+            <hr>
+
+        </div>
+    </div>
+
+    
+
+
+    <!--
+<div class="container contact-form ">
+        <h3> </h3>
+        <hr>
+        <div class="row ml-2 mr-2" >
+        <!--
+            <strong>Je réalise les principales activités suivantes :</strong>
+            <ul>
+                <li class="nav-link mb-3 "> <a href="#analyse">A – ANALYSE DES PROJETS D'INFORMATISATION</a></li>
+                <li class="nav-link mb-3 "> <a href="#solution"> B – SOLUTIONS INFORMATIQUES</a></li>
+            </ul>
+            <hr>
+            -->
+
+    <!--     </div>
+    </div>
+</div>
+
+
+
+
+<!-- P A G E S - COMPETENCES ?      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+    <!-- <div id="competence"></div>
+<div class="div-contact ml-3 mr-3">
+    <div class="container contact-form ">
+        <h3><!--  C O M P E T E N C E S --> <!-- </h3>
+
+        <div id="analyse"></div>
+        <hr>
+        <div class="row ml-2 mr-2 contact-form">
+            <strong class="mb-2" ><!-- A – ANALYSE DES PROJETS D'INFORMATISATION :-->  <!-- --</strong> <hr>
+            <ul><!--
+                <li class="mb-3">Réalise des études techniques de besoins fonctionnels</li>
+                <li class="mb-3"> Formalise un cahier des charges fonctionnel</li>
+                <li class="mb-3"> Modélise le système cible, en utilisant la méthodologie d’analyse appropriée</li>
+                <li class="mb-3"> Réalise le prototypage de l’interface Homme/Machine</li>
+                <li class="mb-3"> Rédige un dossier de spécifications</li>
+                <li class="mb-3"> Planifie et réalise mon travail de veille</li>
+                --><!-- --</ul>
+        </div>
+
+        <div id="solution"></div>
+        <hr>
+        <div class="row ml-2 mr-2 contact-form">
+            <strong  class="mb-2" > <!-- B – SOLUTIONS INFORMATIQUES :--><!-- --</strong>
+            <ul><!--
+                <li class="mb-3"> Inventorie les outils et évaluer le temps de production</li>
+                <li class="mb-3"> Réalise et assemble des modules</li>
+                <li class="mb-3"> Gère la production de composants (codes programmes, ..)</li>
+                <li class="mb-3"> Documente ma réalisation au fur et à mesure du processus de développement</li>
+                <li class="mb-3"> Communique et rends compte sur l’avancée du projet et les réalisations</li>
+                <li class="mb-3"> Définis un plan et une méthodologie de tests et les réalise</li>
+                <li class="mb-3"> Apporte les corrections nécessaires au programme informatique</li>
+                <li class="mb-3"> Identifie et traite les dysfonctionnements (maintenance corrective)</li>
+                --><!-- --</ul>
+        </div>
+
+        <div id="infra"></div>
+
+
+    </div>
+</div>
+</div>
+
+<!-- P A G E S - E X P E R I E N C E S ?   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div id="experiences"></div>
+<div class="div-contact ml-3 mr-3 mb-3">
+    <div class="container contact-form ">
+        <h3>E X P E R I E N C E S </h3>
+        <hr>
+        <div class="row ml-2 mr-2 mb-3">
+            <h4><strong>TECHNICIEN </strong></h4>
+            <p>Support informatique aux utilisateurs.</p>
+        </div>
+        <hr><br>
+        <div class="row ml-2 mr-2 mb-3">
+            <h4><strong>ANALYSTE-PROGRAMMEUR </strong></h4>
+            <p>
+                <strong>GESTION DES DONNEES INTERNE</strong> <br>
+                Réalisation d’outil pour la gestion du processus de soutenance de thèse    
+            </p>
+        </div>
+        <hr><br>
+        <div class="row ml-2 mr-2 mb-3">
+            <h4><strong>CONSULTANT</strong></h4>
+            <p>
+                <strong>GESTION DES DONNEES INTERNE</strong> <br>
+                Collectes, analyses et structurations de données <br>
+                Conception d'application avec une base de données <br>
+                <br>
+                <strong class="mt-3">CASI9.ML</strong> <br>
+                Conception d'un Mini plateforme d'exposition de produits et services.
+                <a href="https://youtube.com/playlist?list=PLRPnqZps0LmfagS-K06GSAPJID7o3TD3R&si=hsxhxoqO45P1lRk-">Demo sur youtube</a><br>
+            </p>
+        </div>
+        <hr>
+        
+    </div>
+</div>
+
+<!-- P A G E S - C O M P E T A N C E S ?   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div id="competences"></div>
+<div class="div-contact ml-3 mr-3 mb-3">
+    <div class="container contact-form ">
+        <h3>C O M P E T A N C E S </h3>
+        <hr>
+        <div class="row ml-2 mr-2" >
+            <strong class="mb-2">O U T I L S </strong> 
+                -	Gestion de Projet {Gantt-projet, Microsoft Office Suite} <br>
+                -	Wireframe {Balsamiq-MockUp} <br>
+                -	Editeur {Nano, SublimText, Eclipse, VSCODE} <br>
+                -	Versionning {Git->GitHub} <br>
+            <hr>
+
+        </div>
+        <hr>
+        <div class="row ml-2 mr-2" >
+            <strong class="mb-2" >S Y S T E M E S </strong> 
+            -	Déploiement et migrations {installation, configuration, maintenance de Matériels et logiciels} <br>
+            -	Virtualisation {Virtual Box, Docker (Notion de base)} <br>
+            -	Systèmes d’exploitation {Windows, Linux} <br>
+            -	Système de Gestion de Base Données {MySQL, Maria DB} <br>
+            <hr>
+        </div>
+        <hr>
+        <div class="row ml-2 mr-2" >
+            <strong class="mb-2" >L A N G A G U E – F R A M E W O R K </strong>
+            -	Terminal {Bash} <br>
+            -	Web {HTML, CSS, PHP, JS} <br>
+            -	Programmation {Java (notion de base)} <br>
+            -	Framework {Bootstrap, Symfony} <br>
+            -	Autres {Création de documentations, Montage audio/images/vidéos} <br>
+            <hr>
+        </div>
+
+        <div class="row ml-2 mr-2">
+            <!--
+                       <div class="col-md-4" style="text-align:center">
+                           <a target="_blank"  href="https://www.linkedin.com/in/boubacar-diakite/" class="nav-link">
+                               <i class='fa fa-linkedin-square fa-3x' aria-hidden="true"></i> L I N K E D I N
+                           </a>
+                       </div>
+            -->
+                       <div class="col-md-4">
+                           <div class="" style="text-align:center">
+                               <!--
+                               <a target="_blank" style="color:green;" href="https://wa.me/message/BQ4XWXH4VH2KE1" class="nav-link">
+                                   <i class='fa fa-whatsapp fa-3x' aria-hidden="true"></i> W H A T S A P P
+                               </a>
+                               -->
+                           </div>
+            </div>
+
+            <div class="col-md-4 mb-3" style="text-align:center">
+                <a style="color:black;" href="https://github.com/4096autos" class="nav-link">
+                    <i class="fa fa-github  fa-2x" aria-hidden="true"></i> Github
+                </a>
+            </div>
+            <div class="col-md-4 mb-3" style="text-align:center">
+                <a style="color:rgb(241, 51, 51);" href="https://youtube.com/playlist?list=PLRPnqZps0LmfagS-K06GSAPJID7o3TD3R&si=hsxhxoqO45P1lRk-" class="nav-link">
+                    <i class="fa fa-youtube  fa-2x" aria-hidden="true"></i> Youtube
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- P A G E S - T E L E C H A R G E R   M O N  C V ?   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div id="contact"></div>
+<div class="div-contact ml-3 mr-3 mb-3">
+    <div class="container contact-form ">
+        <div class="col-md-4 mb-3" style="text-align:right">
+            <div style="text-align: right;"><a href="boubacarD-CV.pdf"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i> Télécharger mon CV</a></div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- P A G E S - C O N T A C T ?   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<div id="contact"></div>
+<div class="div-contact ml-3 mr-3 mb-3">
+    <div class="container contact-form ">
+        <h3>C O N T A C T </h3>
+        <hr>
+        <div class="row ml-2 mr-2">
+            <!--
+                       <div class="col-md-4" style="text-align:center">
+                           <a target="_blank"  href="https://www.linkedin.com/in/boubacar-diakite/" class="nav-link">
+                               <i class='fa fa-linkedin-square fa-3x' aria-hidden="true"></i> L I N K E D I N
+                           </a>
+                       </div>
+            -->
+                       <div class="col-md-4">
+                           <div class="" style="text-align:center">
+                               <!--
+                               <a target="_blank" style="color:green;" href="https://wa.me/message/BQ4XWXH4VH2KE1" class="nav-link">
+                                   <i class='fa fa-whatsapp fa-3x' aria-hidden="true"></i> W H A T S A P P
+                               </a>
+                               -->
+                           </div>
+            </div>
+
+            <div class="col-md-4 mb-3" style="text-align:center">
+                <a style="color:#043927;" href="mailto:jyjh98wx@duck.com" class="nav-link">
+                    <i class="fa fa-send-o fa-2x" aria-hidden="true"></i> &nbsp; Envoyer un message par mail
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="div-contact mb-3">
+    <div class="container ">
+        <h3> &nbsp; </h3>
+        <hr>
+
+        <div class="row ml-2 mr-2">
+
+
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+<br>
+<div class="footer-bottom fixed-bottom " style="text-align: center; ">
+    <footer class="footer">
+        <div class="">
+            <nav class="navbar nav-footer navbar-expand ">
+
+                <div class="collapse navbar-collapse nav justify-content-center " id="navbarNavAltMarkup" >
+                    <div class="navbar-nav nav justify-content-center">
+                        <!--
+                        <div class="nav-item">
+                            <a style="color:#343a40;" href="#competence" class="nav-link"><i class="fa fa-briefcase fa-2x "></i> Compétences</a>
+                        </div>-->
+                        <div></div>
+                        <div class="nav-item">
+
+                            <b>
+                                <a style="color:#043927;" href="#contact" class="nav-link">
+                                    <i class="fa fa-handshake-o fa-2x"></i> Contact
+                                </a>
+                            </b>
+
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </footer>
+</div>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+
+</script>
+</body>
+</html>
